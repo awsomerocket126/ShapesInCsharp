@@ -7,7 +7,8 @@ public class Input
 				"\n/help: brings up help menu" +
 				"\n/exit: exits out of the program" +
 				"\nShapes:" +
-				"\nType 1: Square,";
+				"\nType 1: Square," +
+				"\n Type 2: Hexagon";
 		Console.WriteLine(quest);
 	Console.WriteLine();
 		string Field = Console.ReadLine();
@@ -19,6 +20,9 @@ public class Input
 				case 1:
 					Shape.SquareRec();
 					break;
+				case 2:
+					Shape.Hexagon();
+					break;
 				default:
 					Console.WriteLine("Shape does not exist");
 					Console.WriteLine();
@@ -28,7 +32,7 @@ public class Input
 		}
 		catch
 		{
-		switch(Field)
+			switch (Field)
 			{
 				case "/help":
 					Console.WriteLine();
@@ -46,7 +50,7 @@ public class Input
 					Input.Question("What shape would you like to make?\ntype /help for more info or type /exit to exit this program now");
 					break;
 			}
-
+		
 		}
 	}
 }
