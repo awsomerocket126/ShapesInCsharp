@@ -8,7 +8,7 @@ public class Input
 				"\n/exit: exits out of the program" +
 				"\nShapes:" +
 				"\nType 1: Square," +
-				"\n Type 2: Hexagon";
+				"\nType 2: Hexagon";
 		Console.WriteLine(quest);
 	Console.WriteLine();
 		string Field = Console.ReadLine();
